@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
         
         // Send the successful response back to the client.
         return NextResponse.json(data);
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
         // Catch any other errors during the process (e.g., network issues, JSON parsing failures).
         console.error('INTERNAL API ROUTE ERROR:', error.message);
